@@ -6,8 +6,7 @@ from phonenumbers import carrier
 import time
 from colorama import Fore
 {Fore.RED}
-print("""
-
+print('\033[36m'"""
 ███████╗ ██████╗ █████╗ ███╗   ██╗███╗   ██╗███████╗██████╗ 
 ██╔════╝██╔════╝██╔══██╗████╗  ██║████╗  ██║██╔════╝██╔══██╗
 ███████╗██║     ███████║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝
@@ -16,7 +15,6 @@ print("""
 ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
                                                             
 ===================By Qu3ti==========================
-
 """)
 {Fore.RESET}
 
@@ -29,6 +27,10 @@ geo = geocoder.description_for_number(numdata, 'es')
 
 carr = ("Carrier: "+carrier.name_for_number (numdata, 'es'))
 
+print("Espera...")
+time.sleep(0.4)
+print('\033[32m'"Listo! ")
+time.sleep(0.2)
 
 print(numdata)
 print(zone)
