@@ -1,5 +1,9 @@
 from colorama.ansi import Fore
 import phonenumbers
+import time, requests, os
+os.system('pip install requests')
+os.system('pip install colorama')
+os.system('cls')
 from phonenumbers import geocoder
 from phonenumbers import timezone
 from phonenumbers import carrier
